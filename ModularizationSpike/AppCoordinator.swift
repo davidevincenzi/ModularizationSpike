@@ -14,16 +14,18 @@ import Sync
 import UI
 
 class AppCoordinator {
-    let uiFactory = UIFactory()
-    let persistenceFactory = PersistenceFactory()
+    @Inject private var dependencies: AppDependenciesModuleType
     
     func start(from window: UIWindow) {
-        let mainPresenter = uiFactory.makeMainPresenter()
+        let uiFactory: UIFactory = dependencies.component()
+        let mainPresenter =  uiFactory.makeMainPresenter()
         configure(mainPresenter: mainPresenter)
         window.rootViewController = mainPresenter.toPresent()
     }
     
     private func configure(mainPresenter: MainPresenter) {
+        let persistenceFactory: PersistenceFactory = dependencies.component()
+        
         let docs = persistenceFactory.makeDocumentsDataSource()
         mainPresenter.setDocumentName(docs.documents().first?.uppercasedName)
         

@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Persistence
+import Sync
+import UI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        dependencies.build()
+        
         return true
     }
 
@@ -33,3 +37,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+struct AppDependenciesModule: AppDependenciesModuleType {
+    
+    func component() -> UIFactory {
+        UIFactory()
+    }
+    
+    func component() -> PersistenceFactory {
+        PersistenceFactory()
+    }
+}
+
+// MARK: API
+
+protocol AppDependenciesModuleType {
+    func component() -> UIFactory
+    func component() -> PersistenceFactory
+}
+
+private let dependencies = Dependencies {
+    Module { AppDependenciesModule() as AppDependenciesModuleType }
+}
