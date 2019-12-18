@@ -28,6 +28,7 @@
 		6B5CBC5123AA635300D64D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B5CBC5923AA649C00D64D3C /* Persistence */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Persistence; sourceTree = "<group>"; };
 		6B5CBC5A23AA64D600D64D3C /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		6B5CBC6023AA732F00D64D3C /* Sync */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sync; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		6B5CBC5723AA639A00D64D3C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6B5CBC6023AA732F00D64D3C /* Sync */,
 				6B5CBC5A23AA64D600D64D3C /* Models */,
 				6B5CBC5923AA649C00D64D3C /* Persistence */,
 			);
