@@ -12,6 +12,7 @@
 		6B3EBD0323AA993C0082796C /* UI in Frameworks */ = {isa = PBXBuildFile; productRef = 6B3EBD0223AA993C0082796C /* UI */; };
 		6B3EBD0523AA99510082796C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EBD0423AA99510082796C /* AppCoordinator.swift */; };
 		6B4BD5DC23AAB1EB0014790A /* Shank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BD5DB23AAB1EB0014790A /* Shank.swift */; };
+		6B4BD5DE23AAB3220014790A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B4BD5DD23AAB3220014790A /* Default-568h@2x.png */; };
 		6B5CBC4423AA634E00D64D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4323AA634E00D64D3C /* AppDelegate.swift */; };
 		6B5CBC4D23AA635300D64D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4C23AA635300D64D3C /* Assets.xcassets */; };
 		6B5CBC5D23AA65D900D64D3C /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5CBC5C23AA65D900D64D3C /* Models */; };
@@ -23,6 +24,7 @@
 		6B3EBD0023AA98C10082796C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6B3EBD0423AA99510082796C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		6B4BD5DB23AAB1EB0014790A /* Shank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shank.swift; sourceTree = "<group>"; };
+		6B4BD5DD23AAB3220014790A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6B5CBC4023AA634E00D64D3C /* ModularizationSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularizationSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5CBC4323AA634E00D64D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B5CBC4C23AA635300D64D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		6B5CBC3723AA634E00D64D3C = {
 			isa = PBXGroup;
 			children = (
+				6B4BD5DD23AAB3220014790A /* Default-568h@2x.png */,
 				6B5CBC4223AA634E00D64D3C /* ModularizationSpike */,
 				6B5CBC5723AA639A00D64D3C /* Modules */,
 				6B5CBC4123AA634E00D64D3C /* Products */,
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B5CBC4D23AA635300D64D3C /* Assets.xcassets in Resources */,
+				6B4BD5DE23AAB3220014790A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
