@@ -10,4 +10,5 @@ import Models
 
 public protocol DocumentsDataSource {
     func documents() -> [DocumentProtocol]
+    func update(documents: [DocumentProtocol])
 }

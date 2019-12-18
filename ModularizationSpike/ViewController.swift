@@ -9,6 +9,7 @@
 import UIKit
 import Models
 import Persistence
+import Sync
 
 class ViewController: UIViewController {
     //This would be a dependency in a real project
@@ -25,6 +26,12 @@ class ViewController: UIViewController {
         documentNameLabel.text = documentsDataSource.documents().first?.uppercasedName
     }
 
-
+    @IBAction func sync(_ sender: Any) {
+        let factory = SyncFactory()
+        factory.makeSyncProvider().startSync(dataSource: documentsDataSource) { [weak self] in
+            self?.documentNameLabel.text = "Sync finished!"
+        }
+    }
+    
 }
 

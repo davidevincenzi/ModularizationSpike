@@ -12,4 +12,7 @@ class CoreDataDocumentsDataSource: DocumentsDataSource {
     func documents() -> [DocumentProtocol] {
         return [Document(name: "The document!")]
     }
+    func update(documents: [DocumentProtocol]) {
+        //Do something
+    }
 }

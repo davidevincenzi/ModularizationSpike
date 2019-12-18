@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B22B3BD23AA813A0001A033 /* Sync in Frameworks */ = {isa = PBXBuildFile; productRef = 6B22B3BC23AA813A0001A033 /* Sync */; };
 		6B5CBC4423AA634E00D64D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4323AA634E00D64D3C /* AppDelegate.swift */; };
 		6B5CBC4623AA634E00D64D3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4523AA634E00D64D3C /* SceneDelegate.swift */; };
 		6B5CBC4823AA634E00D64D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4723AA634E00D64D3C /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B22B3BD23AA813A0001A033 /* Sync in Frameworks */,
 				6B5CBC5F23AA65DC00D64D3C /* Persistence in Frameworks */,
 				6B5CBC5D23AA65D900D64D3C /* Models in Frameworks */,
 			);
@@ -112,6 +114,7 @@
 			packageProductDependencies = (
 				6B5CBC5C23AA65D900D64D3C /* Models */,
 				6B5CBC5E23AA65DC00D64D3C /* Persistence */,
+				6B22B3BC23AA813A0001A033 /* Sync */,
 			);
 			productName = ModularizationSpike;
 			productReference = 6B5CBC4023AA634E00D64D3C /* ModularizationSpike.app */;
@@ -368,6 +371,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6B22B3BC23AA813A0001A033 /* Sync */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Sync;
+		};
 		6B5CBC5C23AA65D900D64D3C /* Models */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Models;

@@ -21,10 +21,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ5-qX-SpN">
+                                <rect key="frame" x="184" y="498.5" width="46" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Sync"/>
+                                <connections>
+                                    <action selector="sync:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZs-sz-soc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="51X-xo-03B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9fc-Ci-ZDE"/>
+                            <constraint firstItem="JJ5-qX-SpN" firstAttribute="top" secondItem="51X-xo-03B" secondAttribute="bottom" constant="40" id="Iiv-E6-cL0"/>
+                            <constraint firstItem="JJ5-qX-SpN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k4S-zL-7Oe"/>
                             <constraint firstItem="51X-xo-03B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uXf-H9-sRE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
