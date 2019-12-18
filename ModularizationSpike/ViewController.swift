@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import Models
+import Persistence
 
 class ViewController: UIViewController {
-
+    //This would be a dependency in a real project
+    lazy var documentsDataSource: DocumentsDataSource = {
+        let factory = PersistenceFactory()
+        return factory.makeDocumentsDataSource()
+    }()
+    
+    @IBOutlet weak var documentNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        documentNameLabel.text = documentsDataSource.documents().first?.uppercasedName
     }
 
 

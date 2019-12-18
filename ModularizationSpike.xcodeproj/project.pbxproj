@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		6B5CBC4B23AA634E00D64D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4923AA634E00D64D3C /* Main.storyboard */; };
 		6B5CBC4D23AA635300D64D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4C23AA635300D64D3C /* Assets.xcassets */; };
 		6B5CBC5023AA635300D64D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4E23AA635300D64D3C /* LaunchScreen.storyboard */; };
+		6B5CBC5D23AA65D900D64D3C /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5CBC5C23AA65D900D64D3C /* Models */; };
+		6B5CBC5F23AA65DC00D64D3C /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5CBC5E23AA65DC00D64D3C /* Persistence */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6B5CBC4C23AA635300D64D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B5CBC4F23AA635300D64D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B5CBC5123AA635300D64D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B5CBC5923AA649C00D64D3C /* Persistence */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Persistence; sourceTree = "<group>"; };
+		6B5CBC5A23AA64D600D64D3C /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5CBC5F23AA65DC00D64D3C /* Persistence in Frameworks */,
+				6B5CBC5D23AA65D900D64D3C /* Models in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +47,9 @@
 			isa = PBXGroup;
 			children = (
 				6B5CBC4223AA634E00D64D3C /* ModularizationSpike */,
+				6B5CBC5723AA639A00D64D3C /* Modules */,
 				6B5CBC4123AA634E00D64D3C /* Products */,
+				6B5CBC5B23AA65D900D64D3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +75,22 @@
 			path = ModularizationSpike;
 			sourceTree = "<group>";
 		};
+		6B5CBC5723AA639A00D64D3C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6B5CBC5A23AA64D600D64D3C /* Models */,
+				6B5CBC5923AA649C00D64D3C /* Persistence */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6B5CBC5B23AA65D900D64D3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = ModularizationSpike;
+			packageProductDependencies = (
+				6B5CBC5C23AA65D900D64D3C /* Models */,
+				6B5CBC5E23AA65DC00D64D3C /* Persistence */,
+			);
 			productName = ModularizationSpike;
 			productReference = 6B5CBC4023AA634E00D64D3C /* ModularizationSpike.app */;
 			productType = "com.apple.product-type.application";
@@ -336,6 +364,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B5CBC5C23AA65D900D64D3C /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		6B5CBC5E23AA65DC00D64D3C /* Persistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Persistence;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B5CBC3823AA634E00D64D3C /* Project object */;
 }
