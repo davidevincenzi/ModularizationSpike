@@ -1,15 +1,14 @@
 import XCTest
 @testable import Models
 
-final class ModelsTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Models().text, "Hello, World!")
-    }
+fileprivate struct DocumentProtocolMock: DocumentProtocol {
+    var name: String
+}
 
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+final class DocumentProtocolTests: XCTestCase {
+    func testExample() {
+        let document = DocumentProtocolMock(name: "something")
+        
+        XCTAssertEqual(document.uppercasedName, "SOMETHING")
+    }
 }
