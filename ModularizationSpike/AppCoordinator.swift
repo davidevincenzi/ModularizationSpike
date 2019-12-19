@@ -12,6 +12,7 @@ import Models
 import Persistence
 import Sync
 import UI
+import Shank
 
 class AppCoordinator {
     @Inject private var dependencies: AppDependenciesModuleType

@@ -9,6 +9,15 @@
           "revision": "747c8db8d57b68d5e35275f10c92d55f982adbd4",
           "version": "4.9.1"
         }
+      },
+      {
+        "package": "Shank",
+        "repositoryURL": "git@github.com:ZamzamInc/Shank.git",
+        "state": {
+          "branch": "master",
+          "revision": "ad863ae52c1bbf7885d4bfdb09a28b08bc3f8537",
+          "version": null
+        }
       }
     ]
   },

@@ -11,8 +11,8 @@
 		6B3EBD0123AA98C10082796C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EBD0023AA98C10082796C /* SceneDelegate.swift */; };
 		6B3EBD0323AA993C0082796C /* UI in Frameworks */ = {isa = PBXBuildFile; productRef = 6B3EBD0223AA993C0082796C /* UI */; };
 		6B3EBD0523AA99510082796C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EBD0423AA99510082796C /* AppCoordinator.swift */; };
-		6B4BD5DC23AAB1EB0014790A /* Shank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BD5DB23AAB1EB0014790A /* Shank.swift */; };
 		6B4BD5DE23AAB3220014790A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B4BD5DD23AAB3220014790A /* Default-568h@2x.png */; };
+		6B5608C623AB7DAD00888FD6 /* Shank in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5608C523AB7DAD00888FD6 /* Shank */; };
 		6B5CBC4423AA634E00D64D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4323AA634E00D64D3C /* AppDelegate.swift */; };
 		6B5CBC4D23AA635300D64D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B5CBC4C23AA635300D64D3C /* Assets.xcassets */; };
 		6B5CBC5D23AA65D900D64D3C /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 6B5CBC5C23AA65D900D64D3C /* Models */; };
@@ -23,7 +23,6 @@
 		6B3EBCFF23AA97AD0082796C /* UI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UI; sourceTree = "<group>"; };
 		6B3EBD0023AA98C10082796C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6B3EBD0423AA99510082796C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		6B4BD5DB23AAB1EB0014790A /* Shank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shank.swift; sourceTree = "<group>"; };
 		6B4BD5DD23AAB3220014790A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6B5CBC4023AA634E00D64D3C /* ModularizationSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularizationSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5CBC4323AA634E00D64D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5608C623AB7DAD00888FD6 /* Shank in Frameworks */,
 				6B3EBD0323AA993C0082796C /* UI in Frameworks */,
 				6B22B3BD23AA813A0001A033 /* Sync in Frameworks */,
 				6B5CBC5F23AA65DC00D64D3C /* Persistence in Frameworks */,
@@ -74,7 +74,6 @@
 				6B5CBC4323AA634E00D64D3C /* AppDelegate.swift */,
 				6B3EBD0023AA98C10082796C /* SceneDelegate.swift */,
 				6B3EBD0423AA99510082796C /* AppCoordinator.swift */,
-				6B4BD5DB23AAB1EB0014790A /* Shank.swift */,
 				6B5CBC4C23AA635300D64D3C /* Assets.xcassets */,
 				6B5CBC5123AA635300D64D3C /* Info.plist */,
 			);
@@ -120,6 +119,7 @@
 				6B5CBC5E23AA65DC00D64D3C /* Persistence */,
 				6B22B3BC23AA813A0001A033 /* Sync */,
 				6B3EBD0223AA993C0082796C /* UI */,
+				6B5608C523AB7DAD00888FD6 /* Shank */,
 			);
 			productName = ModularizationSpike;
 			productReference = 6B5CBC4023AA634E00D64D3C /* ModularizationSpike.app */;
@@ -149,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 6B5CBC3723AA634E00D64D3C;
+			packageReferences = (
+				6B5608C423AB7DAD00888FD6 /* XCRemoteSwiftPackageReference "Shank" */,
+			);
 			productRefGroup = 6B5CBC4123AA634E00D64D3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,7 +181,6 @@
 				6B3EBD0523AA99510082796C /* AppCoordinator.swift in Sources */,
 				6B5CBC4423AA634E00D64D3C /* AppDelegate.swift in Sources */,
 				6B3EBD0123AA98C10082796C /* SceneDelegate.swift in Sources */,
-				6B4BD5DC23AAB1EB0014790A /* Shank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +358,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		6B5608C423AB7DAD00888FD6 /* XCRemoteSwiftPackageReference "Shank" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:ZamzamInc/Shank.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		6B22B3BC23AA813A0001A033 /* Sync */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -364,6 +377,11 @@
 		6B3EBD0223AA993C0082796C /* UI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UI;
+		};
+		6B5608C523AB7DAD00888FD6 /* Shank */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B5608C423AB7DAD00888FD6 /* XCRemoteSwiftPackageReference "Shank" */;
+			productName = Shank;
 		};
 		6B5CBC5C23AA65D900D64D3C /* Models */ = {
 			isa = XCSwiftPackageProductDependency;

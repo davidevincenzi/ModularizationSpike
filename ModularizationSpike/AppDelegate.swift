@@ -10,6 +10,7 @@ import UIKit
 import Persistence
 import Sync
 import UI
+import Shank
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
