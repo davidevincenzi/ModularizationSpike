@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import Models
-import Persistence
-import Sync
 
 class MainViewController: UIViewController, MainPresenter {
     private var documentNameLabel: UILabel = .init()
